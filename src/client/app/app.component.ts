@@ -12,6 +12,7 @@ import {FooterComponent} from './shared/footer/footer.component';
   selector: 'ip-app',
   viewProviders: [HTTP_PROVIDERS],
   templateUrl: 'app.component.html',
+  styleUrls: ['app.component.css'],
   directives: [ROUTER_DIRECTIVES, NavbarComponent, FooterComponent]
 })
 @Routes([

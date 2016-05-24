@@ -1,7 +1,7 @@
 @import "bourbon";
 
 :host {
-  display: block;
+  @include display(flex);
   padding: 10px 16px;
 }
 
@@ -15,5 +15,5 @@ ul {
 }
 
 .home-cards {
-  @include column-span(4);
+  @include flex(1);
 }
