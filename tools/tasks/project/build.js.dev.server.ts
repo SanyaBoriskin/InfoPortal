@@ -17,8 +17,10 @@ export = () => {
   let tsProject = plugins.typescript.createProject(SERVER_SRC + '/tsconfig.json');
 
   return gulp.src(SERVER_SRC + '/**/*.ts')
+    .pipe(plugins.sourcemaps.init())
     .pipe(plugins.typescript(tsProject))
     .js
+    .pipe(plugins.sourcemaps.write('.'))
     .pipe(gulp.dest(SERVER_DEST));
-  
+
 };

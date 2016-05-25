@@ -182,25 +182,25 @@ export class SeedConfig {
    * The folder for built files in the `dev` environment.
    * @type {string}
    */
-  DEV_DEST = `${this.DIST_DIR}/dev`;
+  DEV_DEST = `${this.DIST_DIR}/client`;
 
   /**
    * The folder for the built files in the `prod` environment.
    * @type {string}
    */
-  PROD_DEST = `${this.DIST_DIR}/prod/client`;
+  PROD_DEST = `${this.DIST_DIR}/client`;
 
   /**
    * The folder for built server files in the `dev` environment.
    * @type {string}
    */
-  DEV_SERVER_DEST = `${this.DIST_DIR}/server/dev`;
+  DEV_SERVER_DEST = `${this.DIST_DIR}/server`;
 
   /**
    * The folder for the built server files in the `prod` environment.
    * @type {string}
    */
-  PROD_SERVER_DEST = `${this.DIST_DIR}/prod/server`;
+  PROD_SERVER_DEST = `${this.DIST_DIR}/server`;
 
   /**
    * The folder for temporary files.
