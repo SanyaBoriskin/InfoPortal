@@ -156,4 +156,5 @@ gulp.task('prod', (done: any) =>
     'build.prod.server',
     'copy.package',
     'copy.proc.file',
+    'clean.tmp',
     done));
